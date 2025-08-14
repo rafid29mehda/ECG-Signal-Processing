@@ -14,7 +14,7 @@ rr_intervals = np.diff(rpeaks) / fs * 1000  # In ms
 # Compute sample entropy
 entropy = nk.entropy_sample(rr_intervals, dimension=2, tolerance=0.2 * np.std(rr_intervals))
 
-# Plot RR intervals and print entropy
+# Plot RR intervals and print the entropy
 plt.figure(figsize=(10, 4))
 plt.plot(rr_intervals, label='RR Intervals')
 plt.xlabel('Beat Number')
